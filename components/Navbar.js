@@ -17,6 +17,9 @@ export default function NavBar() {
         <li>
           <Link href='/todos'><a>to-do</a></Link>
         </li>
+        <li>
+          <Link href='/'><a>Home</a></Link>
+        </li>
       </ul>
         </div>
     )

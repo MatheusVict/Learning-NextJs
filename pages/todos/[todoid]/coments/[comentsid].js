@@ -12,8 +12,8 @@ const Coments = () => {
   return (
     <>
       <Link href={`/todos/${todoid}`}><a>Voltar</a></Link>
-      <h1>Comentario: {comentsid}</h1>
-      <p>Do to-do: {todoid}</p>
+      <h1>Comentario do ID: {comentsid}</h1>
+      <p>Do to-do de ID: {todoid}</p>
     </>
   )
 }

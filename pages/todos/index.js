@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import styles from '../../styles/Todos.module.css'
 
@@ -17,7 +18,7 @@ const todos = ({ todos }) => {
         <h1>To-do List</h1>
         <ul className={styles.todolist}>
             {todos.map((todo) => {
-                return <li key={todo.id}>{todo.title}</li>
+                return <li key={todo.id}>{todo.title} <Link href={`/todos/${todo.id}`}><a>Ver mais</a></Link></li>
             })}
         </ul>
     </>
